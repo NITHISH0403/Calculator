@@ -16,7 +16,8 @@ class Addition extends Calculation{
         super(r, y);
     }
     String calc(){
-        return String.valueOf(result = result + n2);
+        result = result + n2;
+        return String.valueOf(result);
     }
 }
 class Subtraction extends Calculation{
@@ -24,7 +25,8 @@ class Subtraction extends Calculation{
         super(r, y);
     }
     String calc(){
-        return String.valueOf(result = result - n2);
+        result = result - n2;
+        return String.valueOf(result);
     }
 }
 class Multiplication extends Calculation{
@@ -32,7 +34,8 @@ class Multiplication extends Calculation{
         super(r, y);
     }
     String calc(){
-        return String.valueOf(result = result * n2);
+        result = result * n2;
+        return String.valueOf(result);
     }
 }
 class Division extends Calculation{
@@ -41,7 +44,8 @@ class Division extends Calculation{
     }
 
     String calc(){
-        return String.valueOf(result = result / n2);
+        result = result / n2;
+        return String.valueOf(result);
     }
 }
 public class Calculator {
