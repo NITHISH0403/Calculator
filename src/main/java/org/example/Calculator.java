@@ -2,52 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 import java.util.logging.*;
-abstract class Calculation{
-    double result;
-    double n2;
-    Calculation(double r, double y){
-        result = r;
-        n2 = y;
-    }
-    abstract String calc();
-}
-class Addition extends Calculation{
-    Addition(double r, double y) {
-        super(r, y);
-    }
-    String calc(){
-        result = result + n2;
-        return String.valueOf(result);
-    }
-}
-class Subtraction extends Calculation{
-    Subtraction(double r, double y) {
-        super(r, y);
-    }
-    String calc(){
-        result = result - n2;
-        return String.valueOf(result);
-    }
-}
-class Multiplication extends Calculation{
-    Multiplication(double r, double y) {
-        super(r, y);
-    }
-    String calc(){
-        result = result * n2;
-        return String.valueOf(result);
-    }
-}
-class Division extends Calculation{
-    Division(double r, double y) {
-        super(r, y);
-    }
 
-    String calc(){
-        result = result / n2;
-        return String.valueOf(result);
-    }
-}
 public class Calculator {
     public static void main(String[] args) {
         double x;
